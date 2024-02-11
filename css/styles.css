@@ -1,0 +1,254 @@
+/* Общие стили */
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    font-size: 15px; /* Задайте желаемый размер текста */
+}
+
+
+/* Стили для шапки */
+.header {
+    margin-left: 290px;
+    display: flex;
+    align-items: center;
+}
+
+.img-style {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.style-Select-Input,
+.style-Select-long {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Стили для боковой панели */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-color: #1C2536;
+    overflow-y: auto;
+    z-index: 1200;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #2E3D4D;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.sidebar ul li a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a img {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.sidebar ul li a:hover {
+    background-color: #2E3D4D;
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 100%;
+    width: 50%;
+    margin: 2px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header-text {
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: auto;
+    transform: none;
+}
+
+.transfer-container h2,
+.car-options h2,
+.additional-info-container h2 {
+    font-size: 18px;
+    padding: 5px 5px 0 5px;
+}
+
+/* Стили для контейнера с переключателями */
+.transfer-container,
+.car-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.001);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px 20px 20px;
+}
+
+/* Общие стили для боксов */
+.box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* Стили для определенных боксов */
+.box-1 {
+    grid-column: 1 / 3;
+
+}
+
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+    grid-column: span 1;
+}
+
+.header-Car {
+    grid-column: 1 / -1;
+}
+
+/* Стили для дополнительной информации */
+.additional-info-container {
+    text-align: start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.001);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px 20px 20px;
+}
+
+.additional-info-container h2 {
+    margin-bottom: 20px;
+}
+
+.additional {
+    margin-bottom: 20px;
+}
+
+.additional textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    overflow-y: auto;
+}
+
+.additional input,
+.additional textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Стили для формы и кнопки */
+.form.button {
+    display: flex;
+    justify-content: right;
+}
+
+.form button {
+    padding: 12px 25px;
+    background-color: rgb(119, 122, 241);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 1px 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: rgb(99, 102, 241);
+}
+
+/* Стили для гамбургер-меню */
+.hamburger-menu {
+    position: fixed;
+    left: 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.hamburger-menu-line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+/* Показываем гамбургер на мобильных устройствах */
+@media only screen and (max-width: 1300px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-open {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}

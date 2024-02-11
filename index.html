@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Transfer</title>
+</head>
+<body>
+
+<header class="header"><div class="hamburger-menu">
+    <div class="hamburger-menu-line"></div>
+    <div class="hamburger-menu-line"></div>
+    <div class="hamburger-menu-line"></div>
+</div><img src="./img/logo.png" class="img-style" alt="img"><p>Dilijan Logistics</p></header>
+
+
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li><a href="#"><img src="./img/flag.png" class="img-flag" alt="Экскурсии icon">Экскурсии</a></li>
+        <li><a href="#"><img src="./img/car.png" alt="Индивидуальный трансфер icon">Индивидуальный трансфер</a></li>
+        <li><a href="#"><img src="./img/gruz.png" alt="Грузоперевозки/переезд icon">Грузоперевозки/переезд</a></li>
+        <li><a href="#"><img src="./img/taxi.png" alt="Такси/Шаттл icon">Такси/Шаттл</a></li>
+        <li><a href="#"><img src="./img/policy.png" alt="Policy icon">Policy</a></li>
+        <li><a href="#"><img src="./img/book.png" alt="Контакты icon">Контакты</a></li>
+    </ul>
+</div>
+
+<div class="container">
+
+    <h1 class="header-text">Индивидуальный трансфер</h1>
+
+    <div class="transfer-container">
+        <h2>Маршрут</h2>
+        <div class="box box-1">
+            <label for="direction"></label><select class="style-Select-long" id="direction" name="direction" required>
+            <option value=""> Направление </option>
+            <option value="direction">Дилижан -&gt; Звартноц Аэропорт</option>
+            <option value="direction">Дилижан -&gt; Армения</option>
+            <option value="direction">Дилижан -&gt; Гюмри</option>
+            <option value="direction">Дилижан -&gt; Тбилиси</option>
+            <option value="direction">Дилижан -&gt; Ереван</option>
+            <option value="direction">Ереван -&gt; Армения</option>
+            <option value="direction">Ереван -&gt; Дилижан</option>
+            <option value="direction">Тбилиси -&gt; Дилижан</option>
+            <option value="direction">Армения -&gt; Экскурсия</option>
+        </select>
+        </div>
+
+        <div class="box box-2">
+            <label for="date"></label><select class="style-Select-Input" id="date" name="date" required>
+            <option value="">Дата поездки</option>
+            <option value="8">08 фев, чт</option>
+            <option value="9">09 фев, пт</option>
+            <option value="10">10 фев, сб</option>
+            <option value="11">11 фев, вс</option>
+            <option value="12">12 фев, пн</option>
+            <option value="13">13 фев, вт</option>
+            <option value="14">14 фев, ср</option>
+            <option value="15">15 фев, чт</option>
+        </select>
+        </div>
+
+        <div class="box box-3">
+            <label for="time"></label><select class="style-Select-Input" id="time" name="time" required>
+        </select>
+        </div>
+
+        <div class="box box-4">
+            <label for="pickup"></label><input class="style-Select-Input" type="text" id="pickup" name="pickup" required placeholder="Откуда забрать">
+
+        </div>
+
+        <div class="box box-5">
+            <label for="dropoff"></label><input class="style-Select-Input" type="text" id="dropoff" name="dropoff" required placeholder="Куда привезти">
+        </div>
+    </div>
+
+    <div class="car-options">
+        <div class="header-Car">  <h2>Машина</h2>
+        </div>
+        <div>
+            <label for="seats"></label><select class="style-Select-Input" id="seats" name="seats" required>
+            <option value="">Количество мест</option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+        </select>
+        </div>
+
+        <div>
+            <label for="child-seats"></label><select class="style-Select-Input" id="child-seats" name="child-seats" required>
+            <option value="">Количество детских кресел</option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+        </select>
+        </div>
+
+        <div>
+            <label for="luggage"></label><select class="style-Select-Input" id="luggage" name="luggage" required>
+            <option value="">Количество багажа</option>
+            <option value="0"> 0 </option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+            <option value="6"> 6 </option>
+            <option value="7"> 7 </option>
+            <option value="8"> 8 </option>
+        </select>
+        </div>
+
+    </div>
+
+    <div class="additional-info-container">
+        <h2>Дополнительно</h2>
+        <div class="additional"> <label for="contact-number"></label>
+            <input type="text" id="contact-number" name="contact-number" placeholder="Введите номер телефона" required>
+        </div>
+
+        <div class="additional"><label for="comment"></label>
+            <textarea id="comment" name="comment" placeholder="Ваши пожелания"></textarea>
+        </div>
+        <div class="form button"><button id="submit-button">Отправить</button></div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
