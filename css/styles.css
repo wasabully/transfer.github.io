@@ -240,6 +240,10 @@ textarea {
 
 /* Показываем гамбургер на мобильных устройствах */
 @media only screen and (max-width: 1300px) {
+       .container {
+        width: 90%; /* Ширина контейнера */
+        margin: 0 auto; /* Выравнивание по центру */
+    }
     .sidebar {
         display: none;
     }
